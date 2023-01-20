@@ -13,7 +13,7 @@ Using the modules requires the following pre-requisites:
 
 ```hcl
 module "subnet_network_security_group_association" {
-  source  = "TheIronRock95/subnet_network_security_group_association/azurerm"
+  source  = "sironite/subnet_network_security_group_association/azurerm"
   version = "x.x.x"
 
   network_security_group_id = var.network_security_group_id
@@ -24,7 +24,7 @@ module "subnet_network_security_group_association" {
 
 ## Authors
 
-The module is maintained by [Wouter Damman](https://github.com/TheIronRock95)
+The module is maintained by [Sironite](https://github.com/sironite)
 
 ## Documentation
 
