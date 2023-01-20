@@ -1,6 +1,6 @@
-# Terraform module | AzureRM - Subnet
+# Terraform module | AzureRM - Subnet network security group association
 
-This Terraform module is designed to create a subnet for Azure.
+This Terraform module is designed to create a Subnet network security group association for Azure.
 
 ## Pre-requisites
 
@@ -9,10 +9,16 @@ Using the modules requires the following pre-requisites:
 
 ## Usage
 
-`subnet`
+`subnet_network_security_group_association`
 
 ```hcl
+module "subnet_network_security_group_association" {
+  source  = "TheIronRock95/subnet_network_security_group_association/azurerm"
+  version = "x.x.x"
 
+  network_security_group_id = var.network_security_group_id
+  subnet_id                 = var.subnet_id
+}
 
 ```
 
